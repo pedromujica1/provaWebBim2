@@ -29,42 +29,300 @@
     <title>Restaurant</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+
+    <!--Header-->
+    <div class="container-fluid bg-white px-0">
+        <div class="row gx-0">
+            <div class="col-lg-3 bg-white d-none d-lg-block">
+                <img src="images/logo.png" alt="" srcset="">
+            </div>
+            <div class="col-lg-9">
+                
+                <nav class="navbar navbar-expand-lg bg-white navbar-white p-3 p-lg-0">
+                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"> <!--Esse elemento "button" com a classe "navbar-toggler" é responsável por acionar a ação de expansão ou contração de um menu de navegação, identificado pelo seletor "#navbarCollapse", quando clicado.-->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!---Navbar-->
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Home</a> <!--Esse elemento âncora, com o atributo "href" definido como "index.html" e as classes "nav-item nav-link active", representa um link ativo para a página "Home" dentro de uma barra de navegação.-->
+                            <a href="about.html" class="nav-item nav-link">Menu</a>
+                            <a href="service.html" class="nav-item nav-link">About</a>
+                            
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a> <!--Esse elemento âncora, com o atributo "href" definido como "#" e as classes "nav-link dropdown-toggle" e o atributo "data-bs-toggle" definido como "dropdown", representa um link que aciona um menu suspenso ("dropdown") ao ser clicado-->
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="reservation.html" class="dropdown-item">Reservation</a>
+                                    <a href="stuff.html" class="dropdown-item">Stuff</a>
+                                    <a href="gallary.html" class="dropdown-item">Gallary</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        </div>
+                        
+                    </div>
+                    
+                </nav>
+            </div>
         </div>
-    </nav>
-    
+    </div>
+    <!--Header end-->
+
+    <!---Carousel start-->
+    <div class="container-fluid p-lg-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="images/slider-01.jpg" alt="Image">
+                    <div class="carousel-caption text-primary ">
+                        <div class="p-8" style="max-width: 700px;">
+                            
+                            <h1 class="display-3 text-white mb-5 animated slideInDown" style="text-align: left;">Welcome to Live Dinner Restaurant</h1>
+                            <p style="text-align: left;">  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur amet nemo obcaecati officiis beatae laborum eaque, perferendis, quisquam ea aperiam eos quia tempore ducimus voluptatem nostrum alias laboriosam dicta. In? </p>
+                            <a style="text-align: left;" href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft " >Reservation</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev"> <!--Esse botão com a classe "carousel-control-prev" é usado como um controle de retrocesso para um carousel ou um carrossel de imagens. Ao ser clicado, ele irá direcionar o carrossel para o slide anterior, utilizando o seletor "#header-carousel" como alvo e a direção de slide definida como "prev".-->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next"> <!--Esse botão com a classe "carousel-control-next" é usado como um controle de avanço para um carousel ou um carrossel de imagens. Ao ser clicado, ele irá direcionar o carrossel para o próximo slide, utilizando o seletor "#header-carousel" como alvo e a direção de slide definida como "next".-->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 aling-content-lg-center">
+                <div class="col-lg-5">
+                    <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
+                    <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelier</span></h1>
+                    <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium veritatis eligendi, illo facilis voluptates incidunt saepe neque perferendis possimus!</p>
+                    <div class="row g-3 pb-4">
+                        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="border rounded p-1"> <!--Esse elemento "div" com as classes "border rounded p-1" representa um contêiner retangular com bordas arredondadas e um pequeno preenchimento interno.-->
+                                <div class="border rounded text-center p-4">
+                                    <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="mb-0">Rooms</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="border rounded p-1">
+                                <div class="border rounded text-center p-4">
+                                    <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">934</h2>
+                                    <p class="mb-0">Staffs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.6s">  <!--Esse elemento "div" com a classe "col-sm-4 wow fadeIn" e o atributo "data-wow-delay" definido como "0.6s" representa uma coluna de um layout responsivo que terá uma animação de entrada ("fadeIn") com um atraso de 0,6 segundos.-->
+                            <div class="border rounded p-1">
+                                <div class="border rounded text-center p-4">
+                                    <i class="fa fa-hotel fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">234</h2>
+                                    <p class="mb-0">Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a> <!--Esse elemento âncora, com o atributo "href" definido como "" (vazio), as classes "btn btn-primary py-3 px-5 mt-2", e o texto "Explore More", representa um botão de tamanho grande, usado para incentivar a ação de explorar mais informações ou recursos.-->
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s"
+                            src="img/about-1.jpg"
+                            style="margin-top: 25%;">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s"
+                            src="img/about-2.jpg">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s"
+                            src="img/about-3.jpg">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s"
+                            src="img/about-4.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Quote-->
+
+    <!--Gallery-->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" dara-wow-delay="0.1s">
+                <h6 class="section-title text-center text-primary">Our Service</h6>
+                <h1 class="mb-5">Explore Our <span class="text-primary">Services</span></h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp"data-wow-delay="0.1s">
+                    <a class="service-item rounded" href="">
+                        <div class="service-icon bg-transparent border rounded p-1">
+                            <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                <i class="fa fa-hotel fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="mb-3">Rooms & Appartament</h5>
+                        <p class="text-body mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati hic tempore nam excepturi cum vel quos iste. At, maxime!</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp"data-wow-delay="0.1s">
+                    <a class="service-item rounded" href="">
+                        <div class="service-icon bg-transparent border rounded p-1">
+                            <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                <i class="fa fa-spa fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="mb-3">Spa & Fitness</h5>
+                        <p class="text-body mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati hic tempore nam excepturi cum vel quos iste. At, maxime!</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp"data-wow-delay="0.1s">
+                    <a class="service-item rounded" href="">
+                        <div class="service-icon bg-transparent border rounded p-1">
+                            <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                <i class="fa fa-swimmer fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="mb-3">Sports & Gaming</h5>
+                        <p class="text-body mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati hic tempore nam excepturi cum vel quos iste. At, maxime!</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp"data-wow-delay="0.1s">
+                    <a class="service-item rounded" href="">
+                        <div class="service-icon bg-transparent border rounded p-1">
+                            <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                <i class="fa fa-bath fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="mb-3">Bathing area & Sauna</h5>
+                        <p class="text-body mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati hic tempore nam excepturi cum vel quos iste. At, maxime!</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp"data-wow-delay="0.1s">
+                    <a class="service-item rounded" href="">
+                        <div class="service-icon bg-transparent border rounded p-1">
+                            <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                <i class="fa fa-phone-alt fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="mb-3">Communication area & Unlimited Calls</h5>
+                        <p class="text-body mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati hic tempore nam excepturi cum vel quos iste. At, maxime!</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp"data-wow-delay="0.1s">
+                    <a class="service-item rounded" href="">
+                        <div class="service-icon bg-transparent border rounded p-1">
+                            <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                <i class="fa fa-bed fa-2x text-primary"></i>
+                            </div>
+                        </div>
+                        <h5 class="mb-3">Rest & Room Service</h5>
+                        <p class="text-body mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati hic tempore nam excepturi cum vel quos iste. At, maxime!</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Costumer reviews-->
+    <div class="container-xxl py-5">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <!---Footer-->
+    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-primary rounded p-4">
+                        <a href="index.html"><h1 class="text-white text-uppercase mb-3">Hotelier</h1></a>
+                        <p class="text-white mb-0">
+                            Download <a class="text-dark fw-medium" href="https://htmlcodex.com/hotel-html-template-pro">Hotelier – Premium Version</a>, build a professional website for your hotel business and grab the attention of new visitors upon your site’s launch.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="row gy-5 g-4">
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
+                            <a class="btn btn-link" href="">About Us</a>
+                            <a class="btn btn-link" href="">Contact Us</a>
+                            <a class="btn btn-link" href="">Privacy Policy</a>
+                            <a class="btn btn-link" href="">Terms & Condition</a>
+                            <a class="btn btn-link" href="">Support</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
+                            <a class="btn btn-link" href="">Food & Restaurant</a>
+                            <a class="btn btn-link" href="">Spa & Fitness</a>
+                            <a class="btn btn-link" href="">Sports & Gaming</a>
+                            <a class="btn btn-link" href="">Event & Party</a>
+                            <a class="btn btn-link" href="">GYM & Yoga</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
+                        
+                        Designed By <a class="border-bottom" href="">Your Site Name</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        
+    </div>
     
 </body>
 </html>
